@@ -17,6 +17,32 @@
                             alteration in some form</div>
                         <div id="item3">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
                     </div>
+                    <div id="code">
+                        <p>HTML</p>
+                        <div id="html">
+                            <pre>
+                                <code>
+                                    <div class="container">
+                                        <div class="main">
+                                            <div id="item1">It is a long established fact that a reader will be distracted by the readable content of a page when 
+                                                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</div>
+                                            <div id="item2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
+                                                alteration in some form</div>
+                                            <div id="item3">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                        </div>
+                                    </div>
+                                </code>
+                            </pre>
+                        </div>
+                        <p>CSS</p>
+                        <div id="css">
+                            .container { width: 100%; } <br/>
+                            .main { height: 200px; display: flex; border: 1px solid #dddddd; padding: 10px; } <br/>
+                            .main #item1 { background-color: red; flex: 1; padding: 5px; } <br/>
+                            .main #item2 { background-color: blue; flex: 1; padding: 5px; } <br/>
+                            .main #item3 { background-color: green; flex: 1; padding: 5px; } <br/>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- end html code -->
@@ -29,5 +55,33 @@
             </apex:form>
             <!-- start apex code -->
         </body>
+        <script>
+            var entityMap = {
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': '&quot;',
+                "'": '&#39;',
+                "/": '&#x2F;'
+            };
+        
+            function escapeHtml(string) {
+                return String(string).replace(/[&<>"'\/]/g, function (s) {
+                return entityMap[s];
+                });
+            }
+
+            window.onload = function init() {
+                var codeblock = document.querySelectorAll("pre code");        
+                if(codeblock.length) {
+                    for(var i=0, len=codeblock.length; i<len; i++) {
+                        var dom = codeblock[i];
+                        var html = dom.innerHTML;
+                        html = escapeHtml(html);
+                        dom.innerHTML = html;
+                    }
+                }
+            }
+        </script>
     </html>
 </apex:page>
