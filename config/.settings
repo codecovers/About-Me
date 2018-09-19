@@ -1,0 +1,17 @@
+{
+    "projectName": "About Me",
+    "username": "man@cloudindustry.com.au",
+    "id": "fba579a0-bbe9-11e8-97ed-13f63025a1ec",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://dlights-dev-ed.my.salesforce.com",
+    "workspace": "C:\\Users\\Dell\\Documents\\SFDC Workspaces",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}

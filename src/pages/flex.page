@@ -1,0 +1,39 @@
+<apex:page showHeader="false" sidebar="false" docType="html-5.0" standardStylesheets="false" controller="AboutMeController">
+    <html>
+        <head>
+            <title>Flex</title>
+            <style>
+            	.container { width: 100%; }
+                .main { height: 200px; display: flex; border: 1px solid #dddddd; padding: 10px; }
+                .main #item1 { background-color: red; flex: 1; padding: 5px; }
+                .main #item2 { background-color: blue; flex: 1; padding: 5px; }
+                .main #item3 { background-color: green; flex: 1; padding: 5px; }
+            </style>
+        </head>
+        <body>
+            <!-- start html code -->
+            <a href="#" onclick="home();">Home</a>
+            <div id="basic">
+                <p>Flex Basic</p>
+                <div class="container">
+                    <div class="main">
+                        <div id="item1">It is a long established fact that a reader will be distracted by the readable content of a page when 
+                            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</div>
+                        <div id="item2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
+                            alteration in some form</div>
+                        <div id="item3">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                    </div>
+                </div>
+            </div>
+            <!-- end html code -->
+            <apex:form >
+                <apex:actionFunction action="{!HomePage}" name="home" />
+            </apex:form>
+            <!-- start apex code -->
+            <apex:form >
+                
+            </apex:form>
+            <!-- start apex code -->
+        </body>
+    </html>
+</apex:page>

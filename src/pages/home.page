@@ -1,0 +1,18 @@
+<apex:page showHeader="false" sidebar="false" docType="html-5.0" standardStylesheets="false" controller="AboutMeController">
+    <html>
+        <head>
+            <title>About Me</title>
+        </head>
+        <body>
+            <!-- start html code -->
+            <a href="#" onclick="flex();">Flex</a>
+            <!-- end html code -->
+            
+            <!-- start apex code -->
+            <apex:form >
+                <apex:actionFunction action="{!Flaxpage}" name="flex"/>
+            </apex:form>
+            <!-- start apex code -->
+        </body>
+    </html>
+</apex:page>
