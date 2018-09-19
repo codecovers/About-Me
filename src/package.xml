@@ -9,5 +9,9 @@
         <members>home</members>
         <name>ApexPage</name>
     </types>
+    <types>
+        <members>css</members>
+        <name>StaticResource</name>
+    </types>
     <version>36.0</version>
 </Package>

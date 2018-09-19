@@ -1,0 +1,34 @@
+43.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+19:10:45.0 (379750)|USER_INFO|[EXTERNAL]|00528000002Hacx|man@cloudindustry.com.au|Australian Eastern Standard Time|GMT+10:00
+19:10:45.0 (438951)|EXECUTION_STARTED
+19:10:45.0 (448580)|CODE_UNIT_STARTED|[EXTERNAL]|VisualForce View State
+19:10:45.0 (7421043)|CODE_UNIT_FINISHED|VisualForce View State
+19:10:45.0 (8652982)|EXECUTION_FINISHED
+19:10:45.10 (10962023)|USER_INFO|[EXTERNAL]|00528000002Hacx|man@cloudindustry.com.au|Australian Eastern Standard Time|GMT+10:00
+19:10:45.10 (10988928)|EXECUTION_STARTED
+19:10:45.10 (10994338)|CODE_UNIT_STARTED|[EXTERNAL]|VF: /apex/editStaticResource.apexp
+19:10:45.10 (12840598)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+19:10:45.13 (13007427)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+19:10:45.63 (63520581)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+19:10:45.63 (63651914)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+19:10:45.64 (64109683)|SYSTEM_MODE_ENTER|false
+19:10:45.64 (122428806)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+19:10:45.124 (124491888)|CUMULATIVE_LIMIT_USAGE
+19:10:45.124 (124491888)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+19:10:45.124 (124491888)|CUMULATIVE_LIMIT_USAGE_END
+
+19:10:45.10 (124555714)|CODE_UNIT_FINISHED|VF: /apex/editStaticResource.apexp
+19:10:45.10 (125374388)|EXECUTION_FINISHED
