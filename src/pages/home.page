@@ -6,11 +6,13 @@
         <body>
             <!-- start html code -->
             <a href="#" onclick="flex();">Flex</a>
+            <a href="#" onclick="javascript();">Javascript</a>
             <!-- end html code -->
             
             <!-- start apex code -->
             <apex:form >
                 <apex:actionFunction action="{!Flaxpage}" name="flex"/>
+                <apex:actionFunction action="{!JSpage}" name="javascript"/>
             </apex:form>
             <!-- start apex code -->
         </body>

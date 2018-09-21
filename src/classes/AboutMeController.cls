@@ -10,4 +10,9 @@ public class AboutMeController {
         page.setRedirect(true);
         return page;
     }
+    public PageReference JSPage() {
+        PageReference page = Page.javascript;
+        page.setRedirect(true);
+        return page;
+    }
 }
